@@ -8,7 +8,8 @@ public class RomanNumeralsShould {
     @ParameterizedTest
     @CsvSource({"i, 1",
                 "ii, 2",
-                "iii, 3"})
+                "iii, 3",
+                "iv, 4"})
     public void convert_arabic_to_roman(String actual,int value) {
         assertThat(actual, is(RomanNumerals.arabicToRoman(value)));
     }
