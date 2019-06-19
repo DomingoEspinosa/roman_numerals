@@ -9,7 +9,8 @@ public class RomanNumeralsShould {
     @CsvSource({"i, 1",
                 "ii, 2",
                 "iii, 3",
-                "iv, 4"})
+                "iv, 4",
+                "v, 5", "viii, 8"})
     public void convert_arabic_to_roman(String actual,int value) {
         assertThat(actual, is(RomanNumerals.arabicToRoman(value)));
     }
